@@ -16,3 +16,7 @@ my goal for the first session is to be able to compile a base application for im
 
 ###
 the initial goal was achieved, making sure that the project could change directories and still compile, and liking and including all dependencies was kind of a challange but it was a success, I did not bother to for now I'll try to organize the files only based on visual studio filters.
+
+I ended up the day implementing a simple formula for a circle SDF and pushing to GitHUB
+
+![screenshot of the project with a simple texture](ScreenShots/2024-02-09-final-ss.png)
