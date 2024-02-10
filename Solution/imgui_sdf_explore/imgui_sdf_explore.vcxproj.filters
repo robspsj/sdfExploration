@@ -5,15 +5,14 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Arquivos de Recurso">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="imgui">
       <UniqueIdentifier>{42f3d01a-3140-4351-8fbb-04d9ded439d7}</UniqueIdentifier>
     </Filter>
     <Filter Include="imgui_backends">
       <UniqueIdentifier>{eaeb9ea8-3bba-498b-9da0-cc2f35ec8922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="glw3">
+      <UniqueIdentifier>{1689e33c-a4c5-4114-8cf1-3b29914a97b8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,6 +42,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\Imgui\imgui\backends\imgui_impl_opengl3.cpp">
       <Filter>imgui_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gl3w\src\gl3w.c">
+      <Filter>glw3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

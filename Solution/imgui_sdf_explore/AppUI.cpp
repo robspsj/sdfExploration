@@ -1,5 +1,5 @@
 #include "AppUI.h"
-#include "imgui_impl_opengl3_loader.h"
+#include <GL/gl3w.h>
 
 
 char* CreateTexture(int width, int height)
@@ -12,8 +12,8 @@ char* CreateTexture(int width, int height)
             size_t i = (y * width + x) * 4;
 
             tex[i + 0] = y * 255 / height;
-            tex[i + 1] = y * 255 / height;
-            tex[i + 2] = y * 255 / height;
+            tex[i + 1] = x * 255 / width;
+            tex[i + 2] = 0;
             tex[i + 3] = 255;
         }
 
@@ -28,7 +28,9 @@ ImTextureID GenerateTexture(char* tex, int width, int height)
 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_R, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, tex);
 
