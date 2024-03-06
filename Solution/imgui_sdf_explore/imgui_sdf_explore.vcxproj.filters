@@ -37,14 +37,14 @@
     <ClCompile Include="..\imgui\imgui_widgets.cpp">
       <Filter>imgui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Imgui\imgui\backends\imgui_impl_glfw.cpp">
-      <Filter>imgui_backends</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\Imgui\imgui\backends\imgui_impl_opengl3.cpp">
-      <Filter>imgui_backends</Filter>
-    </ClCompile>
     <ClCompile Include="..\gl3w\src\gl3w.c">
       <Filter>glw3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\imgui\backends\imgui_impl_glfw.cpp">
+      <Filter>imgui_backends</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl_imgui_backend_custom\imgui_impl_opengl3_gl3w.cpp">
+      <Filter>imgui_backends</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -69,10 +69,10 @@
     <ClInclude Include="..\imgui\imstb_truetype.h">
       <Filter>imgui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Imgui\imgui\backends\imgui_impl_glfw.h">
+    <ClInclude Include="..\imgui\backends\imgui_impl_opengl3.h">
       <Filter>imgui_backends</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Imgui\imgui\backends\imgui_impl_opengl3.h">
+    <ClInclude Include="..\imgui\backends\imgui_impl_glfw.h">
       <Filter>imgui_backends</Filter>
     </ClInclude>
   </ItemGroup>

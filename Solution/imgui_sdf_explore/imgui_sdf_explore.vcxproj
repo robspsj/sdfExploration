@@ -157,9 +157,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Imgui\imgui\backends\imgui_impl_glfw.cpp" />
-    <ClCompile Include="..\..\..\Imgui\imgui\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="..\gl3w\src\gl3w.c" />
+    <ClCompile Include="..\imgui\backends\imgui_impl_glfw.cpp" />
     <ClCompile Include="..\imgui\imgui.cpp" />
     <ClCompile Include="..\imgui\imgui_demo.cpp" />
     <ClCompile Include="..\imgui\imgui_draw.cpp" />
@@ -169,10 +168,11 @@
     <ClCompile Include="main.cpp">
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\Solution\imgui\backends;..\..\Solution\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="opengl_imgui_backend_custom\imgui_impl_opengl3_gl3w.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\Imgui\imgui\backends\imgui_impl_glfw.h" />
-    <ClInclude Include="..\..\..\Imgui\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="..\imgui\backends\imgui_impl_opengl3.h" />
     <ClInclude Include="..\imgui\imconfig.h" />
     <ClInclude Include="..\imgui\imgui.h" />
     <ClInclude Include="..\imgui\imgui_internal.h" />

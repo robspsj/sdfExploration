@@ -41,11 +41,6 @@ int main(int, char**)
 {
 
     glfwSetErrorCallback(glfw_error_callback);
-
-    if (!gl3wInit()) {
-        fprintf(stderr, "failed to initialize OpenGL\n");
-        return -1;
-    }
     if (!glfwInit())
         return 1;
 

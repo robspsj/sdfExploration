@@ -1,6 +1,13 @@
 #pragma once
 #include <imgui.h>
 
+struct TextureHandler
+{
+    ImTextureID textureId;
+    int width;
+    int height;
+};
+
 class AppUI
 {
 public:
@@ -8,6 +15,7 @@ public:
     void DrawWindow();
 private:
     bool closed = true;
-    ImTextureID textureId = 0;
+    TextureHandler smallTextureId;
+    TextureHandler bigTextureId;
 };
 
